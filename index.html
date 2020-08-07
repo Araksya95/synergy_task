@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Task</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  		
+</head>
+<body>
+	<header>
+		<div class="project_info">
+			<h1 class="header_title">Project : GCF-E-QW-011</h1>
+			<p class="header_paragraphly">State Create/Define Project Data</p>
+			<p class="header_paragraphly">Last modified on 31 Jul 2020 17:34 by Synergy Admin</p>
+			<p class="header_paragraphly">Created on 20 Jul 2020 19:02 by Synergy Admin</p>
+		</div>
+		<div class="header_buttons">
+			<button class="cancel_button">Cancel</button> 
+			<button class="save_close">Save & Close</button> 
+			<button class="save_button">Save</button> 
+			<a href="#"></a>
+		</div>
+	</header>
+	<nav>
+		<a href="#" class="menu_item active">Basic Information</a>
+		<a href="#" class="menu_item">Background</a>
+		<a href="#" class="menu_item">Status of Preparation</a>
+		<a href="#" class="menu_item">Financial Information</a>
+		<a href="#" class="menu_item">Log Frame</a>
+		<a href="#" class="menu_item">Documents</a>
+	</nav>
+	<section class="main">
+		<h2 class="content_title">Basic Information</h2>
+		<div class="basic_information">
+			<div class="flex_row">
+				<span>
+					<label class="info_label">Programme <span class="red">*</span></label>
+					<select>
+						<option>GCFI-QW-011</option>
+						<option>GCFI-QW-011</option>
+					</select>
+				</span>
+				<span>
+					<label class="info_label">Component <span class="red">*</span></label>
+					<select>
+						<option>Component 1</option>
+						<option>Component 2</option>
+						<option>Component 3</option>
+					</select>
+				</span>
+				<span>
+					<label class="info_label">Project Reference <span class="red">*</span></label>
+					<input type="text" name="" placeholder="">
+				</span>
+			</div>
+			<div>
+				<p>
+					<label class="info_label">Project Name <span class="red">*</span></label>
+					<input type="text" name="" placeholder="" class="width_100">
+				</p>
+			</div>
+			<div class="flex_row">
+				<div>
+					<p>Sourse of Fund</p>
+					<p>GCFI</p>	
+				</div>		
+				<div>
+					<p>Type of Fund</p>
+					<p>Loans</p>
+				</div>
+				<div>
+					<label class="info_label">Sector <span class="red">*</span></label>
+					<select>
+						<option>Water and Sewage / Sanitation</option>
+						<option>Water and Sewage / Sanitation 1</option>
+						<option>Water and Sewage / Sanitation 2</option>
+						<option>Water and Sewage / Sanitation 3</option>
+						<option>Water and Sewage / Sanitation 4</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<p>Is Administrative Projects ?</p>
+				<input type="checkbox"  checked="checked" class="checkmark">
+			</div>
+		</div>
+		<div>
+			<h3 class="section_title">Project Purpose</h3>
+			<textarea class="width_100"></textarea>
+		</div>	
+
+		<div class="locations">
+			<h3 class="section_title">Locations</h3>
+			<table class="location_table">
+				<thead>
+					<tr>
+						<th>Governorate</th>
+						<th>District</th>
+						<th>Subdistrict</th>
+						<th>Land lot property <br> registration #</th>
+						<th class="th_two_lines" colspan="2">
+							<div class="th_top_line">GPS Coordinates in MGRS </div>
+							<div class="th_bottom_line"> 
+								<span class="button_latitude">Latitude</span>	 
+								<span>Longitute</span>
+							</div>
+						</th>
+						<th class="t_a_c">General Security</th>
+						<th class="t_a_c">UXO/ERW Clearance</th>
+						<th class="t_a_c">Reference <br>  Point</th>
+						<th ></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Baghdad</td>
+						<td>Al-Karkh</td>
+						<td>Markaz Al-Karkh</td>
+						<td>No Data</td>
+						<td class="t_a_r">No Data</td>
+						<td class="t_a_r">No Data</td>
+						<td>No Data</td>
+						<td>No Data</td>
+						<td><input type="radio" name="" checked=""></td>
+						<td class="delete_edit_burrons">
+							<img src="./img/edit.svg" alt="edit">
+							<img src="./img/delete.svg" alt="delete">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="add_table_row"  id="myBtn">Add</button>
+		</div>	
+		<div class="project_team">
+			<h3 class="section_title">Project Team</h3>
+			<table class="project_table">
+				<thead>
+					<tr>
+						<th>Role</th>
+						<th class="contact_column">Contact</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Data entry role</td>
+						<td>
+							<select class="multiple-checkboxes" multiple="multiple">
+								<option selected>--Select--</option>
+								<option >ProjectDE USer</option>
+								<option>ProjectDE2 USer</option>
+								<option>ProjectDE3 USer</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Validation and Approval Role</td>
+						<td>
+							<select class="multiple-checkboxes" multiple="multiple">
+								<option selected>--Selefct--</option>
+								<option>ProjectDE USer</option>
+								<option>ProjectDE2 USer</option>
+								<option>ProjectDE3 USer</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+<div class="popup_layout" id="myModal">
+	<div class="popup_content">
+		<h2 class="popup_title">Add / Edit Project Location </h2>
+		<form class="form_add_edit">
+			<div>
+				<label>Governorate <span class="red">*</span></label>
+				<select class="governorate">
+					<option value="Select One">--Select One--</option>
+					<option value="Select Two">Select Two</option>
+					<option value="Select Tree">Select Tree</option>
+				</select>
+			</div>
+			<div>
+				<label>District</label>
+				<select class="district" >
+					<option value="Select One">--Select One--</option>
+					<option value="Select Two">Select Two</option>
+					<option value="Select Tree">Select Tree</option>
+				</select>
+			</div>
+			<div>
+				<label>Subdistrict</label>
+				<select class="subdistrict">
+					<option value="Select One">--Select One--</option>
+					<option value="Select Two">Select Two</option>
+					<option value="Select Tree">Select Tree</option>
+				</select>
+			</div>
+			<div>
+				<label>Land lot property registration #</label>
+				<input type="text" value="" class="property_registration">
+			</div>
+			<div>
+				<h3 class="corfination_title">GPS Coordinates in MGRS</h3>
+				<div class="cordinate_section">
+					<div class="cordinate_item">
+						<label>Latitude</label>
+						<input type="text" value="" class="latitude">
+					</div>
+					<div class="cordinate_item">
+						<label>Longitude</label>
+						<input type="text" class="longitude" value="">
+					</div>
+					<div class="cordinate_item">
+						<label>Generel Security</label>
+						<select class="generel_security">
+							<option value="Select One">--Select One--</option>
+							<option value="Select Two">Select Two</option>
+							<option value="Select Tree">Select Tree</option>
+						</select>
+					</div>
+					<div class="cordinate_item">
+						<label>UXO/ERW Clearance</label>
+						<select class="uso_erw">
+							<option value="Select One">--Select One--</option>
+							<option value="Select Two">Select Two</option>
+							<option value="Select Tree">Select Tree</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form_submit">
+				<input type="submit" value="Cancel" id="cancel" class="cancel_button">
+				<input type="submit"  value="Add" id="add_row" class="save_button">
+			</div>
+		</form>
+	</div>
+</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
